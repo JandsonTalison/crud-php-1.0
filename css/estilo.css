@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto';
+}    
+
+body{
+    background-image: url('../assets/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.form{
+    width:90%;
+    border-top-color: transparent;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.form-header{ 
+    height: 80px;
+    text-align:center;
+    line-height: 80px;
+    font-size: 1.8em;
+    background-color: slateblue;
+    color: white;
+}
+
+.content{
+    margin: 4em 2em;
+    display:flex;
+    flex-direction:column;
+}
+
+.format{
+    height: 50px;
+    margin-bottom: 40px;
+    font-size: 1em;
+    border-radius: 3px;
+    color: gray;
+    border: none;
+    outline: none;
+    background-color:white;
+}
+
+.select{
+    display: flex;
+    font-size: 2em;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: #2D3033;
+    color: white;
+}
+
+a img{
+    height: 40px;
+    padding-left: 10px;
+}
+
+input:nth-child(1),input:nth-child(2){
+    padding: 20px;
+}
+
+input[type='submit']{
+    margin-bottom: 0;
+    background-color: #25AAA0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@media(min-width:550px){
+    .form{
+        width:80%;
+    }
+}
+
+@media(min-width:700px){
+    .form{
+        width:70%;
+    }
+}
+
+@media(min-width:800px){
+    .form{
+        width:60%;
+    }
+}
+
+@media(min-width:1000px){
+    .form{
+        width:40%;
+    }
+}
